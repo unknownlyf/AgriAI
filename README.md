@@ -1,4 +1,6 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<h3>APK Link -</h3>
+
+[Download APK](https://drive.google.com/file/d/1NMUVSoPMx46Y_8xfeItcqma6nPEdFMd2/view?usp=sharing)
 
 # Getting Started
 
@@ -46,18 +48,20 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+<h1>Screenshorts -</h1>
+<p align="center">
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/ddf9905a-5e61-42aa-b6a7-b173da4e977d" width=250 height=500></kbd>&nbsp;&thinsp;
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/7f2270c3-bf84-4ecd-a01c-27d3b75e5e06" width=250 height=500></kbd>&nbsp;&thinsp;
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/46633c0b-9419-4477-8dec-6c24f713a6f7" width=250 height=500></kbd>&nbsp;&thinsp;
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/b321ebbb-4924-4902-b096-980c2936ee20" width=250 height=500></kbd>&nbsp;&thinsp;
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/773e6616-e3a1-4274-8455-d16b92d16686" width=250 height=500></kbd>&nbsp;&thinsp;
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/85768bdf-fe56-4bba-8157-741ad8973592" width=250 height=500></kbd>&nbsp;&thinsp;
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/2717918d-c457-4da5-b468-09cee34335f3" width=250 height=500></kbd>&nbsp;&thinsp;
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/257559cf-e10c-4456-a49f-0e31b7e2ea1c" width=250 height=500></kbd>&nbsp;&thinsp;
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/600ed6a9-5fd9-456c-ad8f-8b3bc188764b" width=250 height=500></kbd>&nbsp;&thinsp;
+<kbd><img src="https://github.com/SiddheshGovindBhadale/AgriAI/assets/82762994/461936aa-921c-4902-a6c9-3ed8c5e2749b" width=250 height=500></kbd>&nbsp;&thinsp;
+</p>
 
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
 
 ### Now what?
 
