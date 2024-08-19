@@ -160,7 +160,7 @@ const DiseaseDetection = ({ navigation }) => {
               <Image source={{ uri: image }} style={styles.backgroundImage} />
 
               <View style={styles.container2}>
-                {label && <Text style={styles.result}>Crop Name : <Text style={{ fontWeight: '400' }}>{label.type}</Text></Text>}
+                {label && <Text style={styles.result}>Crop Names : <Text style={{ fontWeight: '400' }}>{label.type}</Text></Text>}
                 {label && <Text style={styles.result}>Crop Disease : <Text style={{ fontWeight: '400' }}>{label.name}</Text></Text>}
                 <View style={styles.buttonWrapper}>
                   <TouchableOpacity style={[styles.moreDetailsButton, { backgroundColor: '#ffffff', borderWidth: 1, borderColor: '#e0e0e0' }]} onPress={openCamera}>
