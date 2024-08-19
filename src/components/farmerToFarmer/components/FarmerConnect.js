@@ -79,6 +79,7 @@ const FarmerConnect = ({ item, id, sendFriendRequest, acceptRequest }) => {
         fetchFriendRequests();
     }, []);
 
+    console.log(`${Config.API_URL}${item.image}`)
 
     return (
         <View style={styles.container}>
@@ -109,7 +110,7 @@ const FarmerConnect = ({ item, id, sendFriendRequest, acceptRequest }) => {
                     <Text style={styles.buttonText}>Pending</Text>
                 </TouchableOpacity>
             ) : recivedRequests.some((friend) => friend._id === item._id) ? (
-                <TouchableOpacity style={[styles.button, { backgroundColor: "green", }]} onPress={() => {acceptRequest(item._id) }}>
+                <TouchableOpacity style={[styles.button, { backgroundColor: "green", }]} onPress={() => { acceptRequest(item._id) }}>
                     <Text style={styles.buttonText}>Accept</Text>
                 </TouchableOpacity>
             ) : (
@@ -139,9 +140,9 @@ const styles = StyleSheet.create({
     profileImage: {
         width: '100%',
         height: '100%',
-        borderRadius:100,
-        borderWidth:2.5,
-        borderColor:'#e9f1f1'
+        borderRadius: 100,
+        borderWidth: 2.5,
+        borderColor: '#e9f1f1'
     },
     userName: {
         fontSize: 15,
@@ -163,8 +164,8 @@ const styles = StyleSheet.create({
         paddingVertical: 9,
         paddingHorizontal: 34,
         borderRadius: 7,
-        width:120,
-        alignItems:'center'
+        width: 120,
+        alignItems: 'center'
     },
     buttonText: {
         color: '#ffffff',
