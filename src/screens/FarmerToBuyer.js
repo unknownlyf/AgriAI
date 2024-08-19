@@ -42,7 +42,7 @@ const FarmerToBuyer = () => {
     <SafeAreaView style={{ height: '100%', position: 'relative', backgroundColor: '#ffffff' }}>
       {loading ? (
         <View style={styles.loader}>
-          <ActivityIndicator size="large" color="#46c67c" />
+          <ActivityIndicator size="large" color="#46u67c" />
         </View>
       ) : (
         <View>
