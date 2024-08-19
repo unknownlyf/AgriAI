@@ -18,19 +18,28 @@ const HomeScreen = () => {
   const navigation = useNavigation();
   const { width, height } = Dimensions.get('window');
   const [userData, setUserData] = useState(null);
-  const [weatherData, setWeatherData] = useState(null);
+  const [weatherData, setWeatherData] = useState({"base": "stations", "clouds": {"all": 50}, "cod": 200, "coord": {"lat": 18.5167, "lon": 73.8563}, "dt": 1717782690, "id": 1259229, "main": {"feels_like": 299.7, "grnd_level": 946, "humidity": 82, "pressure": 1008, "sea_level": 1008, "temp": 298.93, "temp_max": 298.93, "temp_min": 298.93}, "name": "Pune", "rain": {"1h": 0.29}, "rainfall": 0.29, "sys": {"country": "IN", "sunrise": 1717720046, "sunset": 1717767586}, "timezone": 19800, "visibility": 10000, "weather": [{"description": "light rain", "icon": "10n", "id": 500, "main": "Rain"}], "wind": {"deg": 235, "gust": 3.51, "speed": 2.22}});
   const [isLoading, setIsLoading] = useState(true);
   const [latitude, setlatitude] = useState('18.516726');
   const [longtitude, setlongtitude] = useState('73.856255');
   let rainfall = 0.0;
 
+  console.log(weatherData)
+
   const kelvinToCelsius = kelvin => (kelvin - 273.15).toFixed(1);
 
   useEffect(() => {
-    handleLocationPermission()
+    handleLocationPermission();
+  }, []);
+
+  useEffect(() => {
+    if (latitude && longtitude) {
+      fetchData();
+    }
   }, [latitude, longtitude]);
 
   const fetchData = async () => {
+    console.log('data refreshed')
     setIsLoading(true);
     try {
       // Load user data
@@ -117,7 +126,7 @@ const HomeScreen = () => {
     const isGranted = await requestLocationPermission();
     if (isGranted) {
       getLocation();
-      fetchData();
+      // fetchData();
     } else {
       console.log('Location permission denied');
       // Optionally, re-ask for permission or guide the user to settings
